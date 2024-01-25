@@ -1,0 +1,8 @@
+.App{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: beige;
+  border: 2px solid black;
+  display: flex;
+}
