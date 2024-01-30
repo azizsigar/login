@@ -17,15 +17,15 @@ mongoose.connect(dbURL, {
 })
     .then(() => {
         app.listen(3001, () => {
-            console.log('server connected, port on 3001')
-        })
-
+            console.log('Server connected, port on 3001');
+        });
     })
     .catch((error) => {
-        console.log('db error')
-    })
+        console.error('DB connection error:', error.message);
+    });
+
 // middleware
-app.use(bodyparser.json())
+app.use(express.json());
 app.use(cors())
 
 // routes
